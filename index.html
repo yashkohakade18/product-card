@@ -4,24 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        .background{
+            background-color: rgb(207, 203, 203);
+        }
         .product-card{
             width: 425px;
-            height: 550px;
+            height: 600px;
             display: block;
             margin: 65px auto;
-            box-shadow: 0 0 20px 0 black;
+            box-shadow: 0 0 20px 0 #095979;
             border-radius: 20px;
-        }
-        .product-img{
-            width: 400px;
             padding: 10px;
         }
+        .product-img{
+            height: 200px;
+            padding: 10px;
+            display: block;
+            margin: 10px auto;
+            background-color: #095979b7 ;
+            border-radius: 20px;
+        }
+        .card-body{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .product-name{
+            text-align: center;
+
+        }
+
+        .info{
+            margin-top: 40px;
+            font-size: larger;
+            text-align: center;
+        }
+        .product-price{
+            margin-top: 50px;
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+
+        }
+        .btn-buynow{
+            background-color: #095979;
+            color: white;
+            border-radius: 20px;
+            width: 160px;
+            height: 60px;
+            display: block;
+            margin: 40px auto;
+            box-shadow: 0 0 10px 0 #095979;
+        
+
+        }
+        .btn-contianer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            cursor: pointer;
+
+        }
+        .btn-quantity{
+            height: 55px;
+
+
+        }
+        .quantity-txt{
+            font-size: large;
+            font-weight: bold;
+            margin: auto 20px;
+
+        }
+
     </style>
     <title>product card</title>
 </head>
-<body>
+<body class="background">
     <div class="product-card">
         <image src="air_jorden-removebg-preview.png" class="product-img"/>
+        
+        <div class="card-body" >
+            <h1 class="product-name">Jumpman MVP</h1>
+            <p class="info">MJ's first 3-peat championship run. With leather, textile and nubuck detailaing.</p>
+            <p class="product-price">MRP : ₹ 15 295.00/-</p>
+            <div class="btn-contianer">
+                <img src="minus.png" class="btn-quantity"/>
+                <span class="quantity-txt" id="quantity-txt">1</span>
+                <img src="plus.png" class="btn-quantity"/>
+
+            </div>
+
+            <button type="button" class="btn-buynow">BUY NOW</button>
+        </div>
+        
     </div>
 </body>
 </html>
