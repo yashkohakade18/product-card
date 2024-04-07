@@ -1,6 +1,6 @@
 # PRODUCT-CARD-APPLICATION
 
-**WELCOME TO TOGGLER-APPLICATION DESIGN:**
+**WELCOME TO PRODUCT-CARD-APPLICATION DESIGN:**
 This is a `open-source` project serves as an example for product-card design inspired from the shopping applications` PRODUCT-CARD-APPLICATION
 ` design and utilised the knowledge provided by `road to code's
 course`.
