@@ -87,17 +87,40 @@
         <div class="card-body" >
             <h1 class="product-name">Jumpman MVP</h1>
             <p class="info">MJ's first 3-peat championship run. With leather, textile and nubuck detailaing.</p>
-            <p class="product-price">MRP : ₹ 15 295.00/-</p>
+            <p class="product-price">MRP : ₹ 15,295.00/-</p>
+
             <div class="btn-contianer">
-                <img src="minus.png" class="btn-quantity"/>
-                <span class="quantity-txt" id="quantity-txt">1</span>
-                <img src="plus.png" class="btn-quantity"/>
+                <img src="minus.png" class="btn-quantity" onclick="dec()" />
+                <span class="quantity-txt" id="quantity-Text">1</span>
+                <img src="plus.png" class="btn-quantity" onclick="inc()" />
 
             </div>
 
             <button type="button" class="btn-buynow">BUY NOW</button>
         </div>
+
+        <script>
+            function inc(){
+                const quantityText = document.getElementById("quantity-Text");
+                const quantity = parseInt(quantityText.innerText);
+                quantityText.innerText = quantity + 1;
+            
+            }
+            function dec(){
+                let quantityText = document.getElementById("quantity-Text");
+                const quantity = parseInt(quantityText.innerText);
+            
+                if(quantity>0)
+        {
+            quantityText.innerText = quantity - 1;
+        }
+        else
+        {
+            quantityText.innerText = 0;
+        }
+            
+            }
         
-    </div>
+        </script>
 </body>
 </html>
